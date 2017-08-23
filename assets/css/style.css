@@ -2,12 +2,15 @@
 header {
 	background: #ffffff;
 	overflow: auto;
-	position: fixed;
-	height: 50px;
+	position: absolute;
+	height: 75px;
 	border: #cccccc;
 	top: 0;
 	width: 100%;
 	z-index: 900;
+	margin: 0;
+	clear: both;
+	border-bottom: 1px solid #777777;
 }
 		/*My Name*/
 header h1 {
@@ -22,43 +25,57 @@ header h1 {
 	bottom: 0;
 	left: 20%;
 	clear: both;
+	display: block;
 }
 		/*Links on the right*/
 .topnav {
-	float: right;
+	display: block;
+	float: left;
 	clear: both;
 	background: #ffffff;
 	color: #777777;
 	text-align: center;
-	padding: 20px;
-	/*margin: 20px 20px 0px 0px;*/
 	position: absolute;
 	right: 15%;
-	/*top: 1%;*/
+	top: 25px;
 }
 .topnav a {
 	text-decoration: none;
-	padding: 20px;
-	border-right: 1px solid #bcb9bf;
+	padding: 0px 20px;
+	clear: both;
+}
+.topnav-line {
+	display: inline;
+	position: absolute;
+	top: 2px;
+	height: 20px;
+	width: 1px;
+	background-color: #777777;
+	margin: 0px 5px;
 }
 /*End of Top Navigation Bar*/
 
 body {
 	background-color: #dddddd;
-	margin-top: 50px;
+	margin-top: 75px;
+	padding: 0px;
 	background-image: url('../images/rockywall.png');
 }
 .content {
 	position: relative;
 	margin: 30px;
+	left: 5%;
 	background: #ffffff;
 	width: 650px;
 	height: contain;
 	float: left;
 	padding: 20px;
+	border: 1px solid #777777;
+	overflow: hidden;
 }
-.content h2 {
-	/*text-decoration: underline;*/
+.content img {
+	float: left;
+	padding: 0px 10px 10px 0px;
 }
 
 /*Testing portfolio descriptions*/
@@ -86,12 +103,14 @@ body {
 	position: relative;
 	padding: 20px;
 	margin: 30px;
+	right: 10%;
 	background-color: #ffffff;
 	width: 270px;
 	height: 10%;
 	display: block;
 	float: right;
 	margin-bottom: 100px;
+	border: 1px solid #777777;
 }
 .media img {
 	width: 50px;
@@ -103,11 +122,12 @@ body {
 	margin: 10px 0px;
 }
 input {
-	width: 300px;
+	width: 650px;
 	border-color: #bcb9bf;
 }
-#message {
+textarea {
 	height: 200px;
+	width: 650px;
 }
 button {
 	display: block;
@@ -143,4 +163,13 @@ footer {
 	padding: 20px;
 	color: #777777;
 	background: #666666;
+	border: 1px 0px 1px 0px solid #4aaaa5;
+}
+.footer-line {
+	width: 100%;
+	height: 5px;
+	background-color: #4aaaa5;
+	position: fixed;
+	bottom: 64px;
+	margin: 0 auto;
 }
