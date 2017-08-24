@@ -1,9 +1,15 @@
+/*@media all and (min-width: 80%) {
+	.media {
+		clear: left;
+		margin: 0 auto;
+	}
+}*/
 /*Top Navigation Bar*/
 header {
 	background: #ffffff;
 	overflow: auto;
 	position: absolute;
-	height: 75px;
+	height: 80px;
 	border: #cccccc;
 	top: 0;
 	width: 100%;
@@ -18,7 +24,7 @@ header h1 {
 	color: white;
 	font-size: 30px;
 	background: #4aaaa5;
-	width: 150px;
+	width: 20%;
 	height: 50%;
 	text-align: center;
 	padding: 20px;
@@ -44,10 +50,6 @@ header h1 {
 	position: relative;
 	bottom: 5px;
 }
-.topnav a:hover {
-	background-color: #4aaaa5;
-	color: white;
-}
 .topnav-line {
 	display: inline-block;
 	height: 80%;
@@ -63,7 +65,7 @@ header h1 {
 }
 .content {
 	position: relative;
-	margin: 30px;
+	margin: 40px;
 	left: 5%;
 	background: #ffffff;
 	width: 650px;
@@ -71,18 +73,35 @@ header h1 {
 	float: left;
 	padding: 20px;
 	border: 1px solid #777777;
-	overflow: hidden;
+	overflow: auto;
 }
+.media {
+	position: relative;
+	padding: 20px;
+	margin: 40px auto;
+	right: 15%;
+	background-color: #ffffff;
+	width: 270px;
+	height: 20%;
+	display: block;
+	float: right;
+	border: 1px solid #777777;
+	margin-bottom: 100px;
+}
+/*Images*/
 .content img {
 	float: left;
 	padding: 0px 10px 10px 0px;
 }
-/*Testing*/
 #portfolio img {
 	position: relative;
 	width: 100%;
 	height: 100px;
 }
+.media img {
+	width: 60px;
+}
+/*Portfolio Image Links*/
 .city-planning, .woman, .knight, .running {
 	position: relative;
 	width: 40%;
@@ -100,18 +119,11 @@ span {
 	background-color: #4aaaa5;
 	padding: 3px 0px;
 }
-.media {
+.break {
 	position: relative;
-	padding: 20px;
-	margin: 30px;
-	right: 10%;
-	background-color: #ffffff;
-	width: 270px;
-	height: 10%;
-	display: block;
-	float: right;
-	margin-bottom: 100px;
-	border: 1px solid #777777;
+	bottom: 0;
+	width: 1px;
+	height: 500px;
 }
 footer {
 	position: fixed;
@@ -132,6 +144,16 @@ footer {
 	bottom: 64px;
 	margin: 0 auto;
 }
+/*Hovers*/
+.topnav a:hover {
+	background-color: #4aaaa5;
+	color: white;
+}
+button:hover {
+	color: #4aaaa5;
+	background-color: white;
+	font-weight: bold;
+}
 /*Fonts*/
 h1, h2, h3, h4 {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -147,15 +169,15 @@ h2 {
 h3 {
 	font-size: 20px;
 }
+h2, h3 {
+	color: #4aaaa5;
+}
 /*End Fonts*/
 body {
 	background-color: #dddddd;
 	margin-top: 75px;
 	padding: 0px;
 	background-image: url('../images/rockywall.png');
-}
-.media img {
-	width: 50px;
 }
 input {
 	width: 650px;
@@ -170,9 +192,8 @@ button {
 	background: #4aaaa5;
 	color: white;
 	margin-top: 10px;
+	height: 30px;
+	width: 75px;
 }
 
-h2, h3 {
-	color: #4aaaa5;
-}
 
