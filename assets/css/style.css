@@ -54,12 +54,11 @@ header h1 {
 	margin: 0px 5px;
 }
 /*End of Top Navigation Bar*/
-
-body {
-	background-color: #dddddd;
-	margin-top: 75px;
-	padding: 0px;
-	background-image: url('../images/rockywall.png');
+.header-underline {
+	height: 1px;
+	background-color: #bcb9bf;
+	width: 100%;
+	margin: 10px 0px;
 }
 .content {
 	position: relative;
@@ -77,27 +76,28 @@ body {
 	float: left;
 	padding: 0px 10px 10px 0px;
 }
-
-/*Testing portfolio descriptions*/
-#portfolio {
-	position: relative;
-}
-#city h4 {
-	position: fixed;
-	top: 0;
-}
-/*End Test*/
+/*Testing*/
 #portfolio img {
-	height: 100px;
-	width: 200px;
-	display: inline;
-}
-#portfolio h4 {
-	background: #4aaaa5;
-	color: white;
+	position: relative;
 	width: 100%;
-	padding: 20px;
+	height: 100px;
+}
+.city-planning, .woman, .knight, .running {
+	position: relative;
+	width: 40%;
+	height: 40%;
+	margin: 20px;
+	display: inline-block;
+
+}
+span {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	color: white;
 	text-align: center;
+	background-color: #4aaaa5;
+	padding: 3px 0px;
 }
 .media {
 	position: relative;
@@ -111,48 +111,6 @@ body {
 	float: right;
 	margin-bottom: 100px;
 	border: 1px solid #777777;
-}
-.media img {
-	width: 50px;
-}
-.header-underline {
-	height: 1px;
-	background-color: #bcb9bf;
-	width: 100%;
-	margin: 10px 0px;
-}
-input {
-	width: 650px;
-	border-color: #bcb9bf;
-}
-textarea {
-	height: 200px;
-	width: 650px;
-}
-button {
-	display: block;
-	background: #4aaaa5;
-	color: white;
-	margin-top: 10px;
-}
-
-h2, h3 {
-	color: #4aaaa5;
-}
-/*Fonts*/
-h1, h2, h3, h4 {
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
-}
-p, a {
-	color: #777777;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	line-height: 1.5;
-}
-h2 {
-	font-size: 30px;
-}
-h3 {
-	font-size: 20px;
 }
 footer {
 	position: fixed;
@@ -173,3 +131,47 @@ footer {
 	bottom: 64px;
 	margin: 0 auto;
 }
+/*Fonts*/
+h1, h2, h3, h4 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+p, a {
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	line-height: 1.5;
+}
+h2 {
+	font-size: 30px;
+}
+h3 {
+	font-size: 20px;
+}
+/*End Fonts*/
+body {
+	background-color: #dddddd;
+	margin-top: 75px;
+	padding: 0px;
+	background-image: url('../images/rockywall.png');
+}
+.media img {
+	width: 50px;
+}
+input {
+	width: 650px;
+	border-color: #bcb9bf;
+}
+textarea {
+	height: 200px;
+	width: 650px;
+}
+button {
+	display: block;
+	background: #4aaaa5;
+	color: white;
+	margin-top: 10px;
+}
+
+h2, h3 {
+	color: #4aaaa5;
+}
+
