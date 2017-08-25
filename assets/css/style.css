@@ -144,7 +144,7 @@ h2, h3 {
 html, body {
 	background-color: #dddddd;
 	background-image: url('../images/rockywall.png');
-	height: 120%;
+	height: 100%;
 	margin: 0;
 }
 .wrapper {
