@@ -1,21 +1,11 @@
-/*@media all and (min-width: 80%) {
-	.media {
-		clear: left;
-		margin: 0 auto;
-	}
-}*/
 /*Top Navigation Bar*/
 header {
 	background: #ffffff;
 	overflow: auto;
-	position: absolute;
+	position: relative;
 	height: 80px;
 	border: #cccccc;
-	top: 0;
 	width: 100%;
-	z-index: 900;
-	margin: 0;
-	clear: both;
 	border-bottom: 1px solid #777777;
 }
 		/*My Name*/
@@ -57,19 +47,15 @@ header h1 {
 	background-color: #777777;
 }
 /*End of Top Navigation Bar*/
-.header-underline {
-	height: 1px;
-	background-color: #bcb9bf;
-	width: 100%;
-	margin: 10px 0px;
+.container {
+	width: 960px;
+    margin: auto;
+    margin-top: 50px;
 }
 .content {
 	position: relative;
-	margin: 40px;
-	left: 5%;
 	background: #ffffff;
-	width: 650px;
-	height: contain;
+	width: 610px;
 	float: left;
 	padding: 20px;
 	border: 1px solid #777777;
@@ -78,15 +64,11 @@ header h1 {
 .media {
 	position: relative;
 	padding: 20px;
-	margin: 40px auto;
-	right: 15%;
 	background-color: #ffffff;
-	width: 270px;
+	width: 230px;
 	height: 20%;
-	display: block;
 	float: right;
 	border: 1px solid #777777;
-	margin-bottom: 100px;
 }
 /*Images*/
 .content img {
@@ -100,6 +82,7 @@ header h1 {
 }
 .media img {
 	width: 60px;
+	padding: 10px;
 }
 /*Portfolio Image Links*/
 .city-planning, .woman, .knight, .running {
@@ -119,30 +102,15 @@ span {
 	background-color: #4aaaa5;
 	padding: 3px 0px;
 }
-.break {
-	position: relative;
-	bottom: 0;
-	width: 1px;
-	height: 600px;
-}
 footer {
 	position: fixed;
 	bottom: 0;
-	left: 0;
 	width: 100%;
 	text-align: center;
 	padding: 20px;
 	color: #777777;
 	background: #666666;
-	border: 1px 0px 1px 0px solid #4aaaa5;
-}
-.footer-line {
-	width: 100%;
-	height: 5px;
-	background-color: #4aaaa5;
-	position: fixed;
-	bottom: 64px;
-	margin: 0 auto;
+	border-top: 5px solid #4aaaa5;
 }
 /*Hovers*/
 .topnav a:hover {
@@ -173,19 +141,23 @@ h2, h3 {
 	color: #4aaaa5;
 }
 /*End Fonts*/
-body {
+html, body {
 	background-color: #dddddd;
-	margin-top: 75px;
-	padding: 0px;
 	background-image: url('../images/rockywall.png');
+	height: 120%;
+	margin: 0;
+}
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -50px;
 }
 input {
-	width: 650px;
+	width: 610px;
 	border-color: #bcb9bf;
 }
 textarea {
-	height: 200px;
-	width: 650px;
+	height: 150px;
+	width: 610px;
 }
 button {
 	display: block;
@@ -195,5 +167,4 @@ button {
 	height: 30px;
 	width: 75px;
 }
-
 
