@@ -78,6 +78,8 @@ header h1 {
 }
 /*Images*/
 .content img {
+	height: 150px;
+	width: 200px;
 	float: left;
 	padding: 0px 10px 10px 0px;
 }
@@ -176,4 +178,28 @@ button {
 	height: 30px;
 	width: 75px;
 }
-
+/*Media Queries*/
+@media screen and (max-width: 980px) {
+	.container {
+		width: 748px;
+	}
+	.content {
+		width: 369px;
+	}
+	.content img {
+		width: 340px;
+		height: 200px;
+	}
+	.content p {
+		clear: both;
+	}
+	.media {
+		width: 269px;
+	}
+}
+@media screen and (max-width: 768px) {
+	
+}
+@media screen and (max-width: 640px) {
+	
+}
