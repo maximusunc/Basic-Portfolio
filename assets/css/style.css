@@ -270,6 +270,7 @@ button {
 	.container {
 		width: 400px;
 		margin: auto;
+		margin-top: 10px;
 	}
 	.content {
 		width: 350px;
